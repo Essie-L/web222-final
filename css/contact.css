@@ -1,0 +1,84 @@
+#interest {
+    width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 20px;
+}
+
+#interest {
+    width: 900px;
+}
+
+@media(max-width: 1100px) {
+    #interest {
+        width: 80%;
+    }
+}
+
+#basicinfo table{
+    font-size: .9rem;
+    height: 175px;
+}
+
+#basicinfo span {
+    padding-top: 2px;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    font-weight: 400;
+}
+
+.info span {
+    padding-top: 13px;
+}
+.info h2 {
+    margin-bottom: 5px;
+}
+
+.info h4 {
+    font-weight: 400;
+}
+.info h4 span {
+    font-weight: bold;
+}
+
+table span {
+    font-weight: bold;
+}
+
+@media screen and (min-width:400px){
+    #interest{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #footer {
+        position : relative;
+        bottom : 0;
+    }
+    
+}
+
+@media screen and (min-width:700px){
+    #interest{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #footer {
+        position : absolute;
+        bottom : 0;
+    }
+}
+
+@media screen and (min-width:1100px){
+    #interest{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    
+    #footer {
+        position : absolute;
+        bottom : 0;
+    }
+}

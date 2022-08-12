@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/message.css">
+    <!-- Google Font (nav, footer)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="nav">
+        <!-- Unordered List -->
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./interest.html">Interests</a></li>
+            <li><a href="./expert.html">Expertise</a></li>
+            <li><a class="current" href="./message.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1 style="margin-left: 75px;">Contact Me</h1> <!-- 이것도 살짝만 들여쓰기 해주세요. 감사합니다! -->
+        <div id="container">
+            <form action="https://httpbin.org/post" method="post">
+                <label for="name"><span>*</span> Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required >
+
+                <label for="email"><span>*</span> Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Exam@example.com" required >
+
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company">
+
+                <label for="occupation">Occupation</label>
+                <input type="occupation" id="occupation" name="occupation">
+                
+                <label for="address">Street Address</label>
+                <input id="address" class="form-control" name="address" type="text">
+
+                <label for="city">City</label>
+                <input list="cities" id="city" name="city" />
+                <datalist id="cities">
+                    <option value="Toronto">
+                    <option value="Montreal">
+                    <option value="Ottawa">
+                    <option value="Vancouver">
+                    <option value="Quebec">
+                    <option value="St. John's">
+                </datalist>
+
+                <label for="province">Province</label>
+                <input list="provinces" id="province" name="province">
+                <datalist id="provinces">
+                    <option value="Alberta">
+                    <option value="British Columbia">
+                    <option value="Manitoba">
+                    <option value="New Brunswick">
+                    <option value="Newfoundland and Labrador">
+                    <option value="Northwest Territories">
+                    <option value="Nova Scotia">
+                    <option value="Nunavut">
+                    <option value="Ontario">
+                    <option value="Prince Edward Island">
+                    <option value="Quebec">
+                    <option value="Saskatchewan">
+                    <option value="Yukon">
+                </datalist>  
+
+                
+                <label for="postal-code">Postal Code</label>
+                <input id="postal-code" name="post-code" type="text" placeholder="M5W 1E6" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$">
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999">
+
+                <label for="message"><span>*</span> Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea> 
+
+                
+              
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+    
+    </div>
+    <div id="footer">
+        <span>Copyright Seneca Colleage</span>
+    </div>
+</body>
+</html>
