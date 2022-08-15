@@ -16,7 +16,7 @@ body {
 #nav {
     width: 100%;
     background-color: black;
-    font-family: 'Oleo Script Swash Caps', cursive
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 #nav ul {
@@ -54,5 +54,5 @@ body {
 
 #footer span {
     color: white;
-    font-family: 'Oleo Script Swash Caps', cursive
+    font-family: 'Nanum Gothic', sans-serif;
 }
