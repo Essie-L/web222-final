@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 #content {
@@ -15,7 +16,7 @@ body {
 
 #nav {
     width: 100%;
-    background-color: black;
+    background-color: grey;
     font-family: 'Nanum Gothic', sans-serif;
 }
 
@@ -29,24 +30,24 @@ body {
 #nav li { float :left; }
 #nav li a {
     display: block;
-    background-color: black;
+    background-color: grey;
     color: white;
     padding: 8px;
     text-decoration: none;
-    text-align: cetner;
+    text-align: center;
     font-weight: bold;
 }
 #nav li a.current {
-    color: gray;
+    color: red;
 }
 #nav li a:hover:not(.current) {
-    color: darkgray;
+    color: red;
 }
 
 
 #footer {
     width: 100%;
-    background-color: black;
+    background-color: grey;
     margin: 0 auto;
     padding: 10px;
     text-align: center;

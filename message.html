@@ -11,7 +11,9 @@
     <!-- Google Font (nav, footer)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <!-- Javascript validation -->
+    <script src="./message.js"></script>
 </head>
 <body>
     <div id="nav">
@@ -24,14 +26,14 @@
         </ul>
     </div>
     <div id="content">
-        <h1 style="margin-left: 75px;">Contact Me</h1> <!-- 이것도 살짝만 들여쓰기 해주세요. 감사합니다! -->
+        <h1 style="margin-left: 75px;">Contact Me</h1> 
         <div id="container">
-            <form action="https://httpbin.org/post" method="post">
+            <form action="https://httpbin.org/post" method="post" name="contactme" onsubmit="validation()">
                 <label for="name"><span>*</span> Name</label>
                 <input type="text" id="name" name="name" placeholder="Name" required >
 
                 <label for="email"><span>*</span> Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Exam@example.com" required >
+                <input type="email" id="email" name="email" placeholder="name@mail.com" required >
 
                 <label for="company">Company</label>
                 <input type="text" id="company" name="company">
@@ -45,51 +47,53 @@
                 <label for="city">City</label>
                 <input list="cities" id="city" name="city" />
                 <datalist id="cities">
-                    <option value="Toronto">
-                    <option value="Montreal">
-                    <option value="Ottawa">
-                    <option value="Vancouver">
-                    <option value="Quebec">
-                    <option value="St. John's">
+                    <option value="Calgary"></option>
+                    <option value="Edmonton"></option>
+                    <option value="Montreal"></option>
+                    <option value="Ottawa"></option>
+                    <option value="Quebec"></option>
+                    <option value="St.John's"></option>
+                    <option value="Toronto"></option>
+                    <option value="Vancouver"></option>
                 </datalist>
 
                 <label for="province">Province</label>
                 <input list="provinces" id="province" name="province">
                 <datalist id="provinces">
-                    <option value="Alberta">
-                    <option value="British Columbia">
-                    <option value="Manitoba">
-                    <option value="New Brunswick">
-                    <option value="Newfoundland and Labrador">
-                    <option value="Northwest Territories">
-                    <option value="Nova Scotia">
-                    <option value="Nunavut">
-                    <option value="Ontario">
-                    <option value="Prince Edward Island">
-                    <option value="Quebec">
-                    <option value="Saskatchewan">
-                    <option value="Yukon">
+                    <option value="Alberta"></option>
+                    <option value="British Columbia"></option>
+                    <option value="Manitoba"></option>
+                    <option value="New Brunswick"></option>
+                    <option value="Newfoundland and Labrador"></option>
+                    <option value="Northwest Territories"></option>
+                    <option value="Nova Scotia"></option>
+                    <option value="Nunavut"></option>
+                    <option value="Ontario"></option>
+                    <option value="Prince Edward Island"></option>
+                    <option value="Quebec"></option>
+                    <option value="Saskatchewan"></option>
+                    <option value="Yukon"></option>
                 </datalist>  
 
                 
                 <label for="postal-code">Postal Code</label>
-                <input id="postal-code" name="post-code" type="text" placeholder="M5W 1E6" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$">
+                <input id="postal-code" name="post-code" type="text" placeholder="M2N 6B6" pattern="^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$">
 
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999">
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
 
                 <label for="message"><span>*</span> Message</label>
                 <textarea name="message" id="message" cols="30" rows="10" required></textarea> 
-
+               
                 
-              
-                <input type="submit" value="Submit">
+            
+                <input type="submit" value="Submit" onclick="validateform()">
               </form>
         </div>
     
     </div>
     <div id="footer">
-        <span>Copyright Seneca Colleage</span>
+        <span>Copyright @ Seneca Colleage</span>
     </div>
 </body>
 </html>
